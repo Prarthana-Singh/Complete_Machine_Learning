@@ -106,7 +106,7 @@
 
 ---
 
-##  ** Advanced Questions**
+##  **Advanced Questions**
 
 71. **How can you perform a group-based split to avoid related samples in train and test sets?**
 72. **What is GroupKFold, and how is it different from StratifiedKFold?**

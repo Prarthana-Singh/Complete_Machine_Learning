@@ -2,7 +2,7 @@
 # Basics of KNN
 
 **1. What is the K-Nearest Neighbors (KNN) algorithm?**
-KNN is a simple, instance-based ML algorithm that predicts a sample’s label (classification) or value (regression) by looking at the labels/values of the *K* closest training examples in feature space.
+ KNN is a supervised learning algorithm used for both classification and regression. It works by finding the ‘K’ nearest data points (neighbors) to a given input and making predictions based on majority voting (for classification) or averaging (for regression).
 
 **2. Is KNN a classification or regression algorithm?**
 It can be both: `KNeighborsClassifier` for classification and `KNeighborsRegressor` for regression.
@@ -30,7 +30,7 @@ Use cross-validation (e.g., k-fold) to evaluate performance for several K values
 Non-parametric — it makes no strong assumptions about data distribution and doesn’t learn a fixed set of parameters; it stores training data and uses it at prediction.
 
 **8. Why is KNN considered a lazy learner?**
-Because it does minimal work during training (just stores data) and defers computation until prediction time.
+KNN is called a lazy learner because it does not learn any decision boundary or model during training. Instead, it just stores the entire training dataset. The real computation happens only at prediction time, when it calculates distances from the query point to all training samples to find the nearest neighbors.
 
 **9. What do you mean by instance-based learning in KNN?**
 Model decisions are based directly on stored instances (examples), not on a learned global function or parameters.
